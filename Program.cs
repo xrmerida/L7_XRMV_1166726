@@ -1,4 +1,10 @@
-﻿namespace Estructuras_Repetitivas
+﻿/* 
+ * Se deshabilito la notificación
+ * de reasignación de variables ya que
+ * se repitiron variables en los ejercicios
+*/
+#pragma warning disable IDE0059
+namespace Estructuras_Repetitivas
 {
     static class Program
     {
@@ -29,47 +35,48 @@
             Console.ForegroundColor = ConsoleColor.White;
             Console.Read();
 
+
             ////////// EJERCICIO 02 //////////
             Console.WriteLine("\n\n=== EJERCICIO 02 ===");
-            // Entrada de datos
+            /* Entrada de datos */
             int numero,
                 residuo;
-            indice = 0;
+                indice = 1;
             Console.Write("Ingrese un numero: ");
             numero = Convert.ToInt32(Console.ReadLine());
 
             // Salida de datos
-            indice = numero - 1;
-            Console.Write(indice + 1);
             do
             {
                 residuo = numero % indice;
                 if (residuo == 0)
                 {
-                    Console.Write($", {indice}");
+                    Console.WriteLine(indice);
                 }
-                indice--;
-            } while (indice > 0);
+                indice++;
+            } while (indice <= numero);
             Console.ReadLine();
 
 
             ////////// EJERCICIO 03 //////////
             Console.WriteLine("\n\n=== EJERCICIO 03 ===");
             // Entrada de datos
-            int actual = 0;
+            int actual = 1,
+                anterior = 0;
                 numero = 0;
                 indice = 0;
             Console.Write("Ingrese un numero: ");
             numero = Convert.ToInt32(Console.ReadLine());
 
             // Salida de datos
-            Console.Write(0);
-            for (indice = 1; indice < numero; indice++)
+            for (indice = 0; indice < numero; indice ++)
             {
-                actual += indice;
-                Console.Write($", {actual}");
+                Console.WriteLine(anterior);
+                actual += anterior;
+                anterior = actual - anterior;
             }
             Console.ReadLine();
+
 
             ////////// EJERCICIO 04 //////////
             Console.WriteLine("\n\n=== EJERCICIO 04 ===");
