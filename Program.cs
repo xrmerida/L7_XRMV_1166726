@@ -38,7 +38,7 @@ namespace Estructuras_Repetitivas
 
             ////////// EJERCICIO 02 //////////
             Console.WriteLine("\n\n=== EJERCICIO 02 ===");
-            /* Entrada de datos */
+            // Entrada de datos
             int numero,
                 residuo;
                 indice = 1;
