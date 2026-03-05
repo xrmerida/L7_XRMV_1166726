@@ -41,11 +41,12 @@ namespace Estructuras_Repetitivas
             // Entrada de datos
             int numero,
                 residuo;
-                indice = 1;
-            Console.Write("Ingrese un numero: ");
+                indice = 0;
+            Console.Write("Ingrese un numero entero: ");
             numero = Convert.ToInt32(Console.ReadLine());
 
             // Salida de datos
+            indice = 1;
             do
             {
                 residuo = numero % indice;
@@ -65,7 +66,7 @@ namespace Estructuras_Repetitivas
                 anterior = 0;
                 numero = 0;
                 indice = 0;
-            Console.Write("Ingrese un numero: ");
+            Console.Write("Ingrese un numero entero: ");
             numero = Convert.ToInt32(Console.ReadLine());
 
             // Salida de datos
