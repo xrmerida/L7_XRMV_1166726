@@ -80,7 +80,12 @@ namespace Estructuras_Repetitivas
 
             ////////// EJERCICIO 04 //////////
             Console.WriteLine("\n\n=== EJERCICIO 04 ===");
-            for (int tabla = 1; tabla <= 12; tabla++)
+            // Entrada de datos
+            int tabla;
+                indice = 0;
+
+            // Salida de datos
+            for (tabla = 1; tabla <= 12; tabla++)
             {
                 Console.WriteLine($"\nTabla del {tabla}");
                 for (indice = 0; indice <= 10; indice++)
